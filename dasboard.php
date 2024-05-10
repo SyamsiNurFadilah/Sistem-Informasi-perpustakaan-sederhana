@@ -16,7 +16,7 @@
             <li><a href="dasboard.php">Dasboard</a></li>
             <li><a href="buku.php">Daftar Buku</a></li>
             <li><a href="peminjaman.php">Peminjaman</a></li>
-            <li><a href="index.php">Logout</a></li>
+            <li><a href="index.php">Log out</a></li>
         </ul>
     </header>
     <main>
