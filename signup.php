@@ -15,7 +15,7 @@
             </tr>
             <tr>
                 <td>Alamat : </td>
-                <td><textarea name="alamat" id="alamat" cols="45" rows="5" required></textarea></td>
+                <td><textarea name="alamat" id="alamat" cols="35" rows="3" required></textarea></td>
             
             <tr>
                 <td>Email : </td>
@@ -34,8 +34,8 @@
                 <td><input type="password" name="password" id="password" required></td>
             </tr>
             <tr>
-                <td><button type="submit" name="submit" id="submit">Sign Up</button> 
-                <button type="reset" name="reset" id="reset">Cancel</button></td>
+                <td><button type="submit" name="submit1" id="submit1">Sign Up</button> 
+                <button type="reset" name="reset1" id="reset1">Cancel</button></td>
             </tr>
         </form>
     </table>

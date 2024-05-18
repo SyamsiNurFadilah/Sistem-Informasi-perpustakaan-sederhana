@@ -7,7 +7,7 @@
 </head>
 <body>
     <table>
-        <form action="dashboard.php" method="post">
+        <form action="signin.php" method="post">
             <p><b>Form Sign In</b></p>
             <tr>
                 <td>Username : </td>
@@ -25,3 +25,23 @@
     </table>
 </body>
 </html>
+
+<?php
+
+if(isset($_POST["submit"])){
+
+    $username = $_POST["username"];
+    $password = $_POST["password"];
+
+    if(empty($username)){
+        echo "Isi username / password terlebih dahulu";
+    }
+    elseif(empty($password)){
+        echo "Isi username / password terlebih dahulu";
+    }
+    else{
+        header("Location: dashboard.php");
+    }
+}
+
+?>
