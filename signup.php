@@ -8,7 +8,7 @@
 <body>
     <table>
         <form action="signin.php" method="post">
-            <p><b>Form Registrasi</b></p>
+            <p><b>Form Sign Up</b></p>
             <tr>
                 <td>Nama Lengkap : </td>
                 <td><input type="text" name="nama" id="nama" required></td>
