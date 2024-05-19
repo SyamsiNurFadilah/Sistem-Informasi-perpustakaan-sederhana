@@ -40,7 +40,7 @@ if(isset($_POST["submit"])){
         echo "Isi username / password terlebih dahulu";
     }
     else{
-        header("Location: dashboard.php");
+        header("Location: home.php");
     }
 }
 
