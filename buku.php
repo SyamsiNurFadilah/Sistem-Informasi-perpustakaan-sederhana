@@ -32,13 +32,18 @@
 </head>
 <body>
     <header>
-        <h3>Perpustakaan Jakarta</h3>
-        <nav class="navbar">
-            <ul>
-                <li><a href="home.php">Home</a></li>
-                <li><a href="buku.php">Daftar Buku</a></li>
-            </ul>
-        </nav>
+    <div class="container">
+            <nav class="bar">
+                <div class="logo">
+                    <div class="firstname">Perpustakaan</div>
+                    <div class="lastname">Jakarta</div>
+                </div>
+                <ul class="navigation">
+                    <li><a href="home.php">Home</a></li>
+                    <li><a href="buku.php">Daftar Buku</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <h2 style="text-align: center;">Daftar Buku</h2>

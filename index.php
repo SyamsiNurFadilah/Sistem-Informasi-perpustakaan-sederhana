@@ -8,13 +8,18 @@
 </head>
 <body>
     <header>
-        <h3>Perpustakaan Jakarta</h3>
-        <nav class="navbar">
-            <ul>
-                <li><a href="signup.php">Sign Up</a></li>
-                <li><a href="signin.php">Sign In</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="bar">
+                <div class="logo">
+                    <div class="firstname">Perpustakaan</div>
+                    <div class="lastname">Jakarta</div>
+                </div>
+                <ul class="navigation">
+                    <li><a href="signup.php">Sign Up</a></li>
+                    <li><a href="signin.php">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <hr>
     <main>
