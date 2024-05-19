@@ -4,6 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Buku</title>
+    
+    <style>
+       
+        table{
+            border: 1px solid #f2f5f7;
+            text-align: center;
+            margin-top: 50px;
+            background-color: black;
+        }
+        table tr th{
+            width: 170px;
+            background-color: #35a9db;
+            color: #fff;
+            font-weight: normal;
+            padding: 8px;
+        }
+        table tr td{
+            background-color: #86dcec;
+            padding: 8px;
+            font-weight: bold;
+        }
+
+    </style>
+
 </head>
 <body>
     <header>
@@ -16,17 +40,17 @@
     <main>
         <h2 style="text-align: center;">Daftar Buku</h2>
         <form action="peminjaman.php" method="post">
-            <table border="1" style="background-color: black; margin-left: 10px">
-                <tr align="center" style="background-color: #f5d9c1;">
-                    <th width="170">Gambar Buku</th>
-                    <th width="170">Judul Buku</th>
-                    <th width="170">Penulis</th>
-                    <th width="170">Kategori</th>
-                    <th width="170">Tahun Terbit</th>
-                    <th width="170">Penerbit</th>
-                    <th width="170">Aksi</th>
+            <table>
+                <tr>
+                    <th>Gambar Buku</th>
+                    <th>Judul Buku</th>
+                    <th>Penulis</th>
+                    <th>Kategori</th>
+                    <th>Tahun Terbit</th>
+                    <th>Penerbit</th>
+                    <th>Aksi</th>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar1.jpeg" alt="Buku Perahu Kertas" width="120px"></td>
                     <td>Perahu Kertas</td>
                     <td>Dee Lestari</td>
@@ -35,7 +59,7 @@
                     <td>Bentang Pustaka</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar2.jpg" alt="Buku Ayah" width="120px"></td>
                     <td>Ayah</td>
                     <td>Andrea Hirata</td>
@@ -44,7 +68,7 @@
                     <td>Bentang Pustaka</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar3.jpeg" alt="Buku Laskar Pelangi" width="120px"></td>
                     <td>Laskar Pelangi</td>
                     <td>Andrea Hirata</td>
@@ -53,7 +77,7 @@
                     <td>Bentang Pustaka</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar4.jpeg" alt="Buku Melangkah" width="120px"></td>
                     <td>Melangkah</td>
                     <td>J.S Khairen</td>
@@ -62,7 +86,7 @@
                     <td>Gramedia Widiasarana Indonesia</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar5.jpg" alt="Buku Easy & Simple Web Programming" width="120px"></td>
                     <td>Easy & Simple Web Programming</td>
                     <td>Rohi Abdulloh</td>
@@ -71,7 +95,7 @@
                     <td>Elex Media Komputindo</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar6.jpg" alt="Buku 111 Kode HTML" width="120px"></td>
                     <td>111 Kode HMTL</td>
                     <td>Arista Prasetyo Adi</td>
@@ -80,7 +104,7 @@
                     <td>Elex Media Komputindo</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar7.jpeg" alt="Buku Dasar Programming Visual Foxpro 9.0" width="120px"></td>
                     <td>Dasar Programming Visual Foxpro 9.0</td>
                     <td>Hendra Wijaya</td>
@@ -89,7 +113,7 @@
                     <td>Elex Media Komputindo</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar8.jpg" alt="Buku Logika Pemprograman Python" width="120px"></td>
                     <td>Logika Pemprograman Python</td>
                     <td>Abdul Kadir</td>
@@ -98,7 +122,7 @@
                     <td>Elex Media Komputindo</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar9.jpeg" alt="Buku Fisika Dasar II" width="120px"></td>
                     <td>Fisika Dasar II</td>
                     <td>Drs.Soeharto</td>
@@ -107,7 +131,7 @@
                     <td>Gramedia Pustaka</td>
                     <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
                 </tr>
-                <tr align="center" style="background-color: #e3ba98;">
+                <tr>
                     <td><img src="img/gambar10.jpg" alt="Buku Fisika Statistik" width="120px"></td>
                     <td>Fisika Statistik</td>
                     <td>Dr.Juniastel Rajagukguk,M.Si</td>
