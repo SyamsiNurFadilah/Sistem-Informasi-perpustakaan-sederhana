@@ -4,44 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
+    <link rel="stylesheet" href="css/signin.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <table>
-        <form action="signin.php" method="post">
-            <p><b>Form Sign In</b></p>
-            <tr>
-                <td>Username : </td>
-                <td><input type="text" name="username" id="username"></td>
-            </tr>
-            <tr>
-                <td>Password : </td>
-                <td><input type="password" name="password" id="Password"></td>
-            </tr>
-            <tr>
-                <td><button type="submit" name="submit" id="submit">Sign In</button> 
-                <button type="reset" name="reset" id="reset">Cancel</button></td>
-            </tr>
-        </form>
-    </table>
+    <div class="container">
+        <div class="wrapper">
+            <table>
+                <form action="home.php" method="post">
+                    <tr>
+                        <td><p style="font-family: Montserrat;"><b>Form Sign In</b></p></td>
+                    </tr>
+                    <tr>
+                        <td>Username : </td>
+                        <td><input type="text" name="username" id="username" required></td>
+                    </tr>
+                    <tr>
+                        <td>Password : </td>
+                        <td><input type="password" name="password" id="Password" required></td>
+                    </tr>
+                    <tr>
+                        <td><button type="submit" name="submit" id="submit">Sign In</button> 
+                        <button class="cnl1"><a href="index.php">Cancel</a></button></td>           
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
 </body>
 </html>
-
-<?php
-
-if(isset($_POST["submit"])){
-
-    $username = $_POST["username"];
-    $password = $_POST["password"];
-
-    if(empty($username)){
-        echo "Isi username / password terlebih dahulu";
-    }
-    elseif(empty($password)){
-        echo "Isi username / password terlebih dahulu";
-    }
-    else{
-        header("Location: home.php");
-    }
-}
-
-?>

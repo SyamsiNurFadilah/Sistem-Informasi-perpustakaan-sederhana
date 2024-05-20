@@ -4,40 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Buku</title>
-    <link rel="stylesheet" href="css/style.css">
-    
-    <style>
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
        
+    <style>
         table{
             border: 1px solid black;
             text-align: center;
             margin-top: 50px;
             background-color: black;
+            font-family: Montserrat;
         }
         table tr th{
             width: 170px;
             background-color: #B5C18E;
             color: black;
-            font-weight: 200px;
+            font-weight: normal;
             padding: 8px;
+            font-size: 18px;
         }
         table tr td{
             background-color: #EADBC8;
             padding: 8px;
-            font-weight: bold;
+            font-weight: normal;
+            font-size: 18px;
         }
         table tr td img{
             width: 120px;
         }
 
         button{
-            background-color: blue;
+            background-color: #666efa;
             padding: 8px;
-            border-radius: 10px;
-            color: #fff;
+            border-radius: 8px;
+            color: black;
+            font-family: Montserrat;
+            font-weight: bold;
         }
 
+        button:hover{
+            cursor: pointer;
+            background-color: #414afd;
+            transition: all .3s ease-in-out;
+        }
 
+        footer{
+            background-color: #B5C18E;
+            text-align: center;
+            padding: 15px;
+            font-family: Poppins;
+            font-weight: bold;
+        }
     </style>
 
 </head>
@@ -51,11 +73,12 @@
                 <ul class="navigation">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
+                    <li><a href="datapinjam.php">Data Pinjam</a></li>
                 </ul>
             </nav>
         </div>
     <main>
-        <h2 style="text-align: center; margin-top:100px;">Daftar Buku</h2>
+        <h2 style="text-align: center; margin-top:100px; font-family:Montserrat;">Daftar Buku</h2>
         <form action="peminjaman.php" method="post">
             <table>
                 <tr>
@@ -160,5 +183,16 @@
             </table>
         </form>
     </main>
+    <footer>
+        Create With ❤️ By Kelompok 4 <br>
+        &copy;2024
+    </footer>
 </body>
 </html>
+
+<?php
+    if(isset($_POST['logout'])){
+        session_destroy();
+        header("Location: index.php");
+    }
+?>

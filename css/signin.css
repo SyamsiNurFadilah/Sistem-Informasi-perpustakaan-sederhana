@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    font-family: Montserrat;
+}
+
+.wrapper{
+    display: flex;
+    width: 350px;
+    height: 350px;
+    background-color: #B5C18E;
+    border-radius: 20px;
+}
+
+button{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #666efa;  
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.cnl1{
+    background-color: #A91D3A;
+}
+
+.cnl1:hover{
+    background-color: #980c28;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #414afd;
+    transition: all .3s ease-in-out;
+}
+
+.wrapper button a{
+    text-decoration: none;
+    color: black;
+}
+
+
