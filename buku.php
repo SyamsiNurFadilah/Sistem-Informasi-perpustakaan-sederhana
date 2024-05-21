@@ -54,9 +54,11 @@
         }
 
         footer{
+            position: sticky;
+            bottom: 0%;
             background-color: #B5C18E;
             text-align: center;
-            padding: 15px;
+            padding: 3px;
             font-family: Poppins;
             font-weight: bold;
         }

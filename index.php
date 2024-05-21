@@ -8,7 +8,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        .paragraf{
+            width: 700px;
+        }
 
+        img{
+            width: 550px;
+            float: right;
+        }
+
+        p{
+            padding-top: 100px;
+            font-weight: bold;
+            font-size: 1.5em;
+            font-family: Montserrat;
+        }
+
+
+        footer{
+            position: fixed;
+            width: 100%;
+            bottom: 0%;
+            background-color: #B5C18E;
+            text-align: center;
+            padding: 8px;
+            font-family: Poppins;
+            font-weight: bold;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -25,13 +57,15 @@
             </nav>
         </div>
     </header>
-    <hr>
     <main>
-        
+        <div class="paragraf">
+            <p align="center">Web ini dibuat untuk memudahkan warga Jakarta <br>dalam meminjam buku dimanapun dan kapanpun</p>
+        </div>
+        <img src="img/gambar11.png" alt="">
     </main>
-    <footer>
-        
+    <footer >
+        Create With ❤️ By Kelompok 4 <br>
+        &copy;2024
     </footer>
-    <hr>
 </body>
 </html>
