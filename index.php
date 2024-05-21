@@ -17,15 +17,16 @@
         }
 
         img{
-            width: 550px;
+            width: 500px;
             float: right;
         }
 
         p{
-            padding-top: 100px;
+            padding-top: 150px;
             font-weight: bold;
             font-size: 1.5em;
             font-family: Montserrat;
+            color: #A91D3A;
         }
 
 
@@ -33,11 +34,12 @@
             position: fixed;
             width: 100%;
             bottom: 0%;
-            background-color: #B5C18E;
+            background-color: #909e5d;
             text-align: center;
             padding: 8px;
             font-family: Poppins;
             font-weight: bold;
+            box-shadow: 7px 0px 8px 8px rgba(0, 0, 0, 0.5);
         }
 
     </style>
@@ -59,13 +61,13 @@
     </header>
     <main>
         <div class="paragraf">
-            <p align="center">Web ini dibuat untuk memudahkan warga Jakarta <br>dalam meminjam buku dimanapun dan kapanpun</p>
+            <p align="center">JAM OPERASIONAL PERPUSTAKAAN JAKARTA : <br> SENIN S/D JUMAT JAM 07.30 - 16.00 WIB</p>
         </div>
         <img src="img/gambar11.png" alt="">
     </main>
     <footer >
         Create With ❤️ By Kelompok 4 <br>
-        &copy;2024
+        Copyright &copy; 2024
     </footer>
 </body>
 </html>

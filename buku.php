@@ -22,7 +22,7 @@
         }
         table tr th{
             width: 170px;
-            background-color: #B5C18E;
+            background-color: #909e5d;
             color: black;
             font-weight: normal;
             padding: 8px;
@@ -56,11 +56,12 @@
         footer{
             position: sticky;
             bottom: 0%;
-            background-color: #B5C18E;
+            background-color: #909e5d;
             text-align: center;
-            padding: 3px;
+            padding: 8px;
             font-family: Poppins;
             font-weight: bold;
+            box-shadow: 7px 0px 8px 8px rgba(0, 0, 0, 0.5);
         }
     </style>
 
@@ -187,7 +188,7 @@
     </main>
     <footer>
         Create With ❤️ By Kelompok 4 <br>
-        &copy;2024
+        Copyright &copy; 2024
     </footer>
 </body>
 </html>
