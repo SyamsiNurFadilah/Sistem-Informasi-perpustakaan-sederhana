@@ -25,6 +25,7 @@
             font-family: Montserrat;
             border-collapse: collapse;
         }
+        
         table tr th{
             width: 168px;
             background-color: #909e5d;
@@ -33,12 +34,14 @@
             padding: 8px; 
             font-size: 18px;
         }
+        
         table tr td{
             background-color: #EADBC8;
             padding: 8px;
             font-weight: normal;
             font-size: 18px;
         }
+        
         table tr td img{
             width: 90px;
         }
