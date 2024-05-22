@@ -1,7 +1,3 @@
-<?php
-    session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,7 +42,7 @@
                         <td><input type="password" name="password" id="password" required></td>
                     </tr>
                     <tr>
-                        <td style="font-family: Montserrat;"><button type="submit" name="submit" id="submit">Sign Up</button> 
+                        <td style="font-family: Montserrat;"><button type="submit" name="submit1" id="submit1">Sign Up</button> 
                         <button class="cnl1"><a href="index.php">Cancel</a></button></td>
                     </tr>
                 </form>

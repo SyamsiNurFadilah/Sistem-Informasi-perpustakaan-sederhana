@@ -1,3 +1,8 @@
+
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,7 +49,7 @@
     <main>
         <div class="container">
             <div class="wrapper">
-                <form action="datapinjam.php" method="post">
+                <form action="peminjaman.php" method="post">
                     <table>
                         <tr>
                             <td colspan="2"><h2>Isi Data Dibawah ini :</h2></td>
@@ -89,3 +94,17 @@
     </footer>
 </body>
 </html>
+
+<?php
+
+    if(isset($_POST["submit"])){
+        $_SESSION["nama"] = $_POST["nama"];
+        $_SESSION["telpon"] = $_POST["telpon"];
+        $_SESSION["alamat"] = $_POST["alamat"];
+        $_SESSION["kode"] = $_POST["kode"];
+        $_SESSION["tglpinjam"] = $_POST["tglpinjam"];
+        $_SESSION["tglkembali"] = $_POST["tglkembali"];
+        header("Location: datapinjam.php");
+    }
+
+?>

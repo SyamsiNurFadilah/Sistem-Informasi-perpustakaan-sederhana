@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
        
     <style>
-         body{
+        body{
             background-color: #e6ceaf;
         }
         
@@ -23,13 +23,14 @@
             margin-top: 50px;
             background-color: black;
             font-family: Montserrat;
+            border-collapse: collapse;
         }
         table tr th{
-            width: 170px;
+            width: 168px;
             background-color: #909e5d;
             color: black;
             font-weight: normal;
-            padding: 8px;
+            padding: 8px; 
             font-size: 18px;
         }
         table tr td{
@@ -39,7 +40,7 @@
             font-size: 18px;
         }
         table tr td img{
-            width: 120px;
+            width: 90px;
         }
 
         button{
@@ -59,6 +60,7 @@
 
         footer{
             position: sticky;
+            width: 100%;
             bottom: 0%;
             background-color: #909e5d;
             text-align: center;
@@ -85,111 +87,124 @@
             </nav>
         </div>
     <main>
-        <h2 style="text-align: center; margin-top:100px; font-family:Montserrat;">Daftar Buku</h2>
-        <form action="peminjaman.php" method="post">
-            <table>
-                <tr>
-                    <th>Gambar Buku</th>
-                    <th>Judul Buku</th>
-                    <th>Penulis</th>
-                    <th>Kategori</th>
-                    <th>Tahun Terbit</th>
-                    <th>Penerbit</th>
-                    <th>Aksi</th>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar1.jpeg" alt="Buku Perahu Kertas"></td>
-                    <td>Perahu Kertas</td>
-                    <td>Dee Lestari</td>
-                    <td>Novel</td>
-                    <td>2009</td>
-                    <td>Bentang Pustaka</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar2.jpg" alt="Buku Ayah"></td>
-                    <td>Ayah</td>
-                    <td>Andrea Hirata</td>
-                    <td>Novel</td>
-                    <td>2015</td>
-                    <td>Bentang Pustaka</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar3.jpeg" alt="Buku Laskar Pelangi"></td>
-                    <td>Laskar Pelangi</td>
-                    <td>Andrea Hirata</td>
-                    <td>Novel</td>
-                    <td>2005</td>
-                    <td>Bentang Pustaka</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar4.jpeg" alt="Buku Melangkah"></td>
-                    <td>Melangkah</td>
-                    <td>J.S Khairen</td>
-                    <td>Novel</td>
-                    <td>2020</td>
-                    <td>Gramedia Widiasarana Indonesia</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar5.jpg" alt="Buku Easy & Simple Web Programming"></td>
-                    <td>Easy & Simple Web Programming</td>
-                    <td>Rohi Abdulloh</td>
-                    <td>Programming</td>
-                    <td>2016</td>
-                    <td>Elex Media Komputindo</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar6.jpg" alt="Buku 111 Kode HTML"></td>
-                    <td>111 Kode HMTL</td>
-                    <td>Arista Prasetyo Adi</td>
-                    <td>Programming</td>
-                    <td>2019</td>
-                    <td>Elex Media Komputindo</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar7.jpeg" alt="Buku Dasar Programming Visual Foxpro 9.0"></td>
-                    <td>Dasar Programming Visual Foxpro 9.0</td>
-                    <td>Hendra Wijaya</td>
-                    <td>Programming</td>
-                    <td>2017</td>
-                    <td>Elex Media Komputindo</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar8.jpg" alt="Buku Logika Pemprograman Python"></td>
-                    <td>Logika Pemprograman Python</td>
-                    <td>Abdul Kadir</td>
-                    <td>Programming</td>
-                    <td>2019</td>
-                    <td>Elex Media Komputindo</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar9.jpeg" alt="Buku Fisika Dasar II"></td>
-                    <td>Fisika Dasar II</td>
-                    <td>Drs.Soeharto</td>
-                    <td>Fisika</td>
-                    <td>1995</td>
-                    <td>Gramedia Pustaka</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-                <tr>
-                    <td><img src="img/gambar10.jpg" alt="Buku Fisika Statistik"></td>
-                    <td>Fisika Statistik</td>
-                    <td>Dr.Juniastel Rajagukguk,M.Si</td>
-                    <td>Fisika</td>
-                    <td>2023</td>
-                    <td>Sinar Grafika</td>
-                    <td><button type="submit" name="pinjam" id="pinjam">Pinjam</button></td>
-                </tr>
-            </table>
-        </form>
-    </main>
+        <div class="responsive">
+            <h2 style="text-align: center; margin-top:100px; font-family:Montserrat;">Daftar Buku</h2>
+            <form action="peminjaman.php" method="post">
+                <table>
+                    <tr>
+                        <th>Gambar Buku</th>
+                        <th>Judul Buku</th>
+                        <th>Penulis</th>
+                        <th>Kode Buku</th>
+                        <th>Kategori</th>
+                        <th>Tahun Terbit</th>
+                        <th>Penerbit</th>
+                        <th>Aksi</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar1.jpeg" alt="Buku Perahu Kertas"></td>
+                        <td>Perahu Kertas</td>
+                        <td>Dee Lestari</td>
+                        <td>101</td>
+                        <td>Novel</td>
+                        <td>2009</td>
+                        <td>Bentang Pustaka</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="101">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar2.jpg" alt="Buku Ayah"></td>
+                        <td>Ayah</td>
+                        <td>Andrea Hirata</td>
+                        <td>102</td>
+                        <td>Novel</td>
+                        <td>2015</td>
+                        <td>Bentang Pustaka</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="102">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar3.jpeg" alt="Buku Laskar Pelangi"></td>
+                        <td>Laskar Pelangi</td>
+                        <td>Andrea Hirata</td>
+                        <td>103</td>
+                        <td>Novel</td>
+                        <td>2005</td>
+                        <td>Bentang Pustaka</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="103">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar4.jpeg" alt="Buku Melangkah"></td>
+                        <td>Melangkah</td>
+                        <td>J.S Khairen</td>
+                        <td>104</td>
+                        <td>Novel</td>
+                        <td>2020</td>
+                        <td>Gramedia Widiasarana Indonesia</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="104">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar5.jpg" alt="Buku Easy & Simple Web Programming"></td>
+                        <td>Easy & Simple Web Programming</td>
+                        <td>Rohi Abdulloh</td>
+                        <td>105</td>
+                        <td>Programming</td>
+                        <td>2016</td>
+                        <td>Elex Media Komputindo</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="105">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar6.jpg" alt="Buku 111 Kode HTML"></td>
+                        <td>111 Kode HMTL</td>
+                        <td>Arista Prasetyo Adi</td>
+                        <td>106</td>
+                        <td>Programming</td>
+                        <td>2019</td>
+                        <td>Elex Media Komputindo</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="106">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar7.jpeg" alt="Buku Dasar Programming Visual Foxpro 9.0"></td>
+                        <td>Dasar Programming Visual Foxpro 9.0</td>
+                        <td>Hendra Wijaya</td>
+                        <td>107</td>
+                        <td>Programming</td>
+                        <td>2017</td>
+                        <td>Elex Media Komputindo</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="107">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar8.jpg" alt="Buku Logika Pemprograman Python"></td>
+                        <td>Logika Pemprograman Python</td>
+                        <td>Abdul Kadir</td>
+                        <td>108</td>
+                        <td>Programming</td>
+                        <td>2019</td>
+                        <td>Elex Media Komputindo</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="108">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar9.jpeg" alt="Buku Fisika Dasar II"></td>
+                        <td>Fisika Dasar II</td>
+                        <td>Drs.Soeharto</td>
+                        <td>109</td>
+                        <td>Fisika</td>
+                        <td>1995</td>
+                        <td>Gramedia Pustaka</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="109">Pinjam</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/gambar10.jpg" alt="Buku Fisika Statistik"></td>
+                        <td>Fisika Statistik</td>
+                        <td>Dr.Juniastel Rajagukguk,M.Si</td>
+                        <td>110</td>
+                        <td>Fisika</td>
+                        <td>2023</td>
+                        <td>Sinar Grafika</td>
+                        <td><button type="submit" name="pinjam" id="pinjam" value="110">Pinjam</button></td>
+                    </tr>
+                </table>
+            </form>
+        </main>
+    </div>
     <footer>
         Create With ❤️ By Kelompok 4 <br>
         Copyright &copy; 2024
