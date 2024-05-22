@@ -24,6 +24,7 @@
             border: none;
             color: #fff;
             font-size: 18px;
+            border-radius: 10px;
         }
 
         button:hover{
@@ -32,7 +33,7 @@
             border-radius: 10px;
             cursor: pointer;
         }
-        
+
         footer{
             position: fixed;
             width: 100%;
@@ -108,7 +109,7 @@
                 <ul class="navigation">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
-                    <form action="home.php" method="post">
+                    <form action="datapinjam.php" method="post">
                         <li><button type="submit" name="logout">Logout</button></li>
                     </form>
                 </ul>
@@ -166,9 +167,11 @@
 </body>
 </html>
 
+
 <?php
     if(isset($_POST["logout"])){
         session_destroy();
         header("Location: index.php");
+        
     }
 ?>

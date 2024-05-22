@@ -20,7 +20,7 @@ body{
 .wrapper{
     display: flex;
     width: 600px;
-    height: 280px;
+    height: 300px;
     background-color: #909e5d;
     border-radius: 20px;
 }

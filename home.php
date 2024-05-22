@@ -26,12 +26,12 @@
             border: none;
             color: #fff;
             font-size: 18px;
+            border-radius: 10px;
         }
 
         button:hover{
             background-color: #A91D3A;
             transition: all .3s ease-in-out;
-            border-radius: 10px;
             cursor: pointer;
         }
 
