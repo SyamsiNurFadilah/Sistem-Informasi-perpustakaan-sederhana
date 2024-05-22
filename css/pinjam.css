@@ -12,14 +12,14 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 200px;
     font-family: Montserrat;
 }
 
 .wrapper{
     display: flex;
     width: 500px;
-    height: 500px;
+    height: 300px;
     background-color: #909e5d;
     border-radius: 20px;
 }
@@ -45,9 +45,4 @@ button:hover{
     cursor: pointer;
     background-color: #414afd;
     transition: all .3s ease-in-out;
-}
-
-.wrapper button a{
-    text-decoration: none;
-    color: black;
 }
