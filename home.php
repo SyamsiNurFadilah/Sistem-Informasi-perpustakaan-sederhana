@@ -98,7 +98,7 @@
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
         <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta.<br>Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik<br>  memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif. <br></p>
     <footer>
-        Create With ❤️ By Kelompok 4 <br>
+        Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
 </body>

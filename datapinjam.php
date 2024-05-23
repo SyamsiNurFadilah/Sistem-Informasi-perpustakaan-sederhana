@@ -161,7 +161,7 @@
         </div>
     </div>
     <footer>
-        Create With ❤️ By Kelompok 4 <br>
+        Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
 </body>
