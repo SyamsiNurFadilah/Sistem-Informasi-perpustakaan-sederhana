@@ -110,7 +110,7 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
                     <form action="datapinjam.php" method="post">
-                        <li><button type="submit" name="logout">Logout</button></li>
+                        <li><button type="submit" name="logout">Kembalikan Buku</button></li>
                     </form>
                 </ul>
             </nav>
