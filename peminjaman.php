@@ -80,8 +80,10 @@
                             <td><input type="date" name="tglkembali" id="tglkembali" required></td>
                         </tr>
                         <tr>
-                            <td><button type="submit" name="submit" id="submit">Pinjam</button> 
-                            <button class="cnl1" type="reset" name="cancel" id="cancel">Batal</button></td>           
+                            <td>
+                                <button type="submit" name="submit" id="submit">Pinjam</button> 
+                                <button class="cnl1" type="reset" name="cancel" id="cancel">Batal</button>
+                            </td>           
                         </tr>
                     </table>
                 </form>
@@ -106,5 +108,4 @@
         $_SESSION["tglkembali"] = $_POST["tglkembali"];
         header("Location: datapinjam.php");
     }
-
 ?>

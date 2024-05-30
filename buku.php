@@ -156,7 +156,7 @@
                     </tr>
                     <tr>
                         <td><img src="img/gambar6.jpg" alt="Buku 111 Kode HTML"></td>
-                        <td>111 Kode HMTL</td>
+                        <td>111 Kode HTML</td>
                         <td>Arista Prasetyo Adi</td>
                         <td>106</td>
                         <td>Programming</td>

@@ -73,7 +73,7 @@
             $pengarang = "Rohi Abdulloh";
             
         }elseif($kode == "106"){
-            $judul = "111 Kode HMTL";
+            $judul = "111 Kode HTML";
             $pengarang = "Arista Prasetyo Adi";
             
         }elseif($kode == "107"){
@@ -110,7 +110,7 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
                     <form action="datapinjam.php" method="post">
-                        <li><button type="submit" name="logout">Kembalikan Buku</button></li>
+                        <li><button type="submit" name="kembali">Kembalikan Buku</button></li>
                     </form>
                 </ul>
             </nav>
@@ -169,7 +169,7 @@
 
 
 <?php
-    if(isset($_POST["logout"])){
+    if(isset($_POST["kembali"])){
         session_destroy();
         header("Location: index.php");
         
