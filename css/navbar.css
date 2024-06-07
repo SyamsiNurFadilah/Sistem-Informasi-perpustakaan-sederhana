@@ -5,7 +5,6 @@
 
 .bar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     font-family: Poppins;
     background-color: #909e5d;
@@ -55,8 +54,4 @@
     padding: 10px;
     transition: all .3s ease-in-out;
     border-radius: 10px;
-}
-
-.lgo{
-    padding: 15px;
 }

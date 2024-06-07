@@ -55,7 +55,6 @@
         .p3{
             padding-left: 15px;
             font-size: 18px;
-            text-align: left;
             font-family: Montserrat;
             line-height: 1.5em;
             color: #363062;
@@ -96,7 +95,7 @@
     <main>
         <p class="p1">Sistem Informasi Perpustakaan Jakarta</p>
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
-        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta.<br>Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik<br>  memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif. <br></p>
+        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta. Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif.</p>
     <footer>
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
