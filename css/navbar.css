@@ -28,7 +28,7 @@
 
 .lastname{
     color: #363062;
-    font-weight: 900;
+    font-weight: 700;
     padding-left: 4px;
 }
 
@@ -41,17 +41,19 @@
 .navigation li{
     list-style-type: none;
     padding: 15px;
+    margin: 0.1rem;
 }
 
 .navigation li a{
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 700;
     text-decoration: none;
     color: #fff;
 }
 
 .navigation a:hover{
-    background-color: #A91D3A;
-    padding: 10px;
-    transition: all .3s ease-in-out;
+    color: #A91D3A;
+    text-decoration: underline;
+    transition: 300ms;
     border-radius: 10px;
 }

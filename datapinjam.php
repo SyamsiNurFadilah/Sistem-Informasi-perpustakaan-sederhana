@@ -20,16 +20,18 @@
     <style>
         button{
             padding: 10px;
+            font-weight: 700;
             background-color: #909e5d;
             border: none;
             color: #fff;
-            font-size: 18px;
+            font-size: 20px;
             border-radius: 10px;
         }
 
         button:hover{
-            background-color: #A91D3A;
-            transition: all .3s ease-in-out;
+            color: #A91D3A;
+            text-decoration: underline;
+            transition: 300ms;
             border-radius: 10px;
             cursor: pointer;
         }
