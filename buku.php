@@ -16,7 +16,7 @@
         body{
             background-color: #e6ceaf;
         }
-        
+
         table{
             border: 1px solid black;
             text-align: center;
@@ -24,6 +24,7 @@
             background-color: black;
             font-family: Montserrat;
             border-collapse: collapse;
+
         }
         
         table tr th{
@@ -70,7 +71,7 @@
             padding: 8px;
             font-family: Poppins;
             font-weight: bold;
-            box-shadow: 7px 0px 8px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
         }
     </style>
 
