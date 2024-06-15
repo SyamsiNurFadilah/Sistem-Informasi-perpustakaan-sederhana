@@ -46,7 +46,7 @@
         }
 
         .p2{
-            padding-top: 100px;
+            padding-top: 25px;
             font-weight: bold;
             font-size: 24px;
             font-family: Montserrat;
@@ -61,6 +61,31 @@
             line-height: 1.5em;
             color: #363062;
             font-weight: bold;
+        }
+
+        .perpus{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding-top: 15px;
+        }
+
+        .perpus img{
+            width: 300px;
+            height: 200;
+            border: 1.5px solid;
+            border-radius: 13px;
+            box-shadow: 4px 8px 8px 0px #00000042;
+            cursor: pointer;
+            margin: 25px;
+            transition: 300ms;
+        }
+
+        .perpus img:hover{
+            filter: grayscale(1);
+            transform: scale(1.03);
+
         }
 
         footer{
@@ -87,7 +112,7 @@
                 <ul class="navigation">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
-                    <form action="home.php" method="post">
+                    <form action="index.php" method="post">
                         <li><button type="submit" name="logout">Logout</button></li>
                     </form>
                 </ul>
@@ -98,16 +123,14 @@
         <p class="p1">Sistem Informasi Perpustakaan Jakarta</p>
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
         <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta. Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif.</p>
+        <div class="perpus">
+            <img src="img/perpus2.jpg" alt="">
+            <img src="img/perpus1.jpg" alt="">
+            <img src="img/perpus3.jpg" alt="">
+        </div>
     <footer>
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
 </body>
 </html>
-
-<?php
-    if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location: index.php");
-    }
-?>
