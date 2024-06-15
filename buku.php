@@ -77,19 +77,21 @@
 
 </head>
 <body>
-    <div class="container">
-            <nav class="bar">
-                <div class="logo">
-                    <div class="firstname">Perpustakaan</div>
-                    <div class="lastname">Jakarta</div>
-                </div>
-                <ul class="navigation">
-                    <li><a href="home.php">Home</a></li>
-                    <li><a href="buku.php">Daftar Buku</a></li>
-                    <li><a href="datapinjam.php">Data Pinjam</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header>
+        <div class="container">
+                <nav class="bar">
+                    <div class="logo">
+                        <div class="firstname">Perpustakaan</div>
+                        <div class="lastname">Jakarta</div>
+                    </div>
+                    <ul class="navigation">
+                        <li><a href="home.php">Home</a></li>
+                        <li><a href="buku.php">Daftar Buku</a></li>
+                        <li><a href="datapinjam.php">Data Pinjam</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
     <main>
         <div class="responsive">
             <h2 style="text-align: center; margin-top:100px; font-family:Montserrat;">Daftar Buku</h2>
@@ -207,8 +209,8 @@
                     </tr>
                 </table>
             </form>
-        </main>
-    </div>
+        </div>
+    </main>
     <footer>
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024

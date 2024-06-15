@@ -32,8 +32,8 @@
     </style>
 </head>
 <body>
-<header>
-    <div class="container">
+    <header>
+        <div class="container">
             <nav class="bar">
                 <div class="logo">
                     <div class="firstname">Perpustakaan</div>

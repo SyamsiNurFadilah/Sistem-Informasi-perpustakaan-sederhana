@@ -103,7 +103,7 @@
 </head>
 <body>
     <header>
-    <div class="container">
+        <div class="container">
             <nav class="bar">
                 <div class="logo">
                     <div class="firstname">Perpustakaan</div>
@@ -128,6 +128,7 @@
             <img src="img/perpus1.jpg" alt="">
             <img src="img/perpus3.jpg" alt="">
         </div>
+    </main>
     <footer>
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024

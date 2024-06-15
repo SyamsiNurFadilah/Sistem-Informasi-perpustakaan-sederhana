@@ -118,50 +118,52 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <div class="wrapper">
-            <form action="" method="post">
-                <table>
-                    <tr>
-                        <td><h2>Data Peminjaman :</h2></td>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td>Nama Lengkap : </td>
-                        <td><?php echo $_SESSION["nama"];?></td>
-                    </tr>
-                    <tr>
-                        <td>No Telpon : </td>
-                        <td><?php echo $_SESSION["telpon"];?></td>
-                    </tr>
-                    <tr>
-                        <td>Alamat : </td>
-                        <td><?php echo $_SESSION["alamat"];?></td>
-                    </tr>
-                    <tr>
-                        <td>Kode Buku : </td>
-                        <td><?php echo $_SESSION["kode"];?></td>
-                    </tr>
-                    <tr>
-                        <td>Judul Buku : </td>
-                        <td><?php echo $judul;?></td>
-                    </tr>
-                    <tr>
-                        <td>Pengarang : </td>
-                        <td><?php echo $pengarang;?></td>
-                    </tr>
-                    <tr>
-                        <td>Tanggal Peminjaman : </td>
-                        <td><?php echo $_SESSION["tglpinjam"];?></td>
-                    </tr>
-                    <tr>
-                        <td>Tanggal Pengembalian : </td>
-                        <td><?php echo $_SESSION["tglkembali"];?></td>
-                    </tr>
-                </table>
-            </form>
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td><h2>Data Peminjaman :</h2></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td>Nama Lengkap : </td>
+                            <td><?php echo $_SESSION["nama"];?></td>
+                        </tr>
+                        <tr>
+                            <td>No Telpon : </td>
+                            <td><?php echo $_SESSION["telpon"];?></td>
+                        </tr>
+                        <tr>
+                            <td>Alamat : </td>
+                            <td><?php echo $_SESSION["alamat"];?></td>
+                        </tr>
+                        <tr>
+                            <td>Kode Buku : </td>
+                            <td><?php echo $_SESSION["kode"];?></td>
+                        </tr>
+                        <tr>
+                            <td>Judul Buku : </td>
+                            <td><?php echo $judul;?></td>
+                        </tr>
+                        <tr>
+                            <td>Pengarang : </td>
+                            <td><?php echo $pengarang;?></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Peminjaman : </td>
+                            <td><?php echo $_SESSION["tglpinjam"];?></td>
+                        </tr>
+                        <tr>
+                            <td>Tanggal Pengembalian : </td>
+                            <td><?php echo $_SESSION["tglkembali"];?></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
-    </div>
+    </main>
     <footer>
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
