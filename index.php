@@ -33,7 +33,6 @@
             color: #A91D3A;
         }
 
-
         footer{
             position: fixed;
             width: 100%;

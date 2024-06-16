@@ -44,16 +44,16 @@
     margin: 0.1rem;
 }
 
-.navigation li a{
+.navigation a{
     font-size: 20px;
     font-weight: 700;
     text-decoration: none;
     color: #fff;
+    padding: 6px 0;
 }
 
 .navigation a:hover{
     color: #A91D3A;
-    text-decoration: underline;
+    border-bottom: 1px solid;
     transition: 300ms;
-    border-radius: 10px;
 }

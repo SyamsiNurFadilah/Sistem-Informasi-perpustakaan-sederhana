@@ -45,6 +45,10 @@
         
         table tr td img{
             width: 90px;
+            border: 1.5px solid;
+            border-radius: 10px;
+            cursor: pointer;
+            box-shadow: 4px 8px 8px 0px #00000042;
         }
 
         button{

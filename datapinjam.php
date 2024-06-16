@@ -19,20 +19,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <style>
         button{
-            padding: 10px;
+            padding: 8px 0;
             font-weight: 700;
             background-color: #909e5d;
             border: none;
             color: #fff;
             font-size: 20px;
-            border-radius: 10px;
         }
 
         button:hover{
             color: #A91D3A;
-            text-decoration: underline;
+            border-bottom: 1px solid;
             transition: 300ms;
-            border-radius: 10px;
             cursor: pointer;
         }
 

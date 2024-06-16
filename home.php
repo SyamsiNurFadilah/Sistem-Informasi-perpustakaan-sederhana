@@ -21,18 +21,17 @@
         }
         
         button{
-            padding: 10px;
+            padding: 8px 0;
             font-weight: 700;
             background-color: #909e5d;
             border: none;
             color: #fff;
             font-size: 20px;
-            border-radius: 10px;
         }
 
         button:hover{
             color: #A91D3A;
-            text-decoration: underline;
+            border-bottom: 1px solid;
             transition: 300ms;
             cursor: pointer;
         }
@@ -50,6 +49,7 @@
             font-weight: bold;
             font-size: 24px;
             font-family: Montserrat;
+            color: #363062;
             padding-left: 15px;
             line-height: 1.5em;
         }
@@ -59,7 +59,6 @@
             font-size: 18px;
             font-family: Montserrat;
             line-height: 1.5em;
-            color: #363062;
             font-weight: bold;
         }
 
@@ -122,11 +121,11 @@
     <main>
         <p class="p1">Sistem Informasi Perpustakaan Jakarta</p>
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
-        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta. Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif.</p>
+        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta. Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik memungkinkan seseorang untuk menganalis, memahami, dan menggunakan informasi secara efektif.</p>
         <div class="perpus">
-            <img src="img/perpus2.jpg" alt="">
-            <img src="img/perpus1.jpg" alt="">
-            <img src="img/perpus3.jpg" alt="">
+            <img src="img/perpus2.jpg" alt="Perpustakaan">
+            <img src="img/perpus1.jpg" alt="Perpustakaan">
+            <img src="img/perpus3.jpg" alt="perpustakaan">
         </div>
     </main>
     <footer>
