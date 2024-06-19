@@ -21,6 +21,7 @@
             border: 1px solid black;
             text-align: center;
             margin-top: 50px;
+            margin-bottom: 60px;
             background-color: black;
             font-family: Montserrat;
             border-collapse: collapse;
@@ -67,7 +68,7 @@
         }
 
         footer{
-            position: sticky;
+            position: fixed;
             width: 100%;
             bottom: 0%;
             background-color: #909e5d;

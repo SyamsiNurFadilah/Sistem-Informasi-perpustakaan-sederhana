@@ -57,6 +57,7 @@
         .p3{
             padding-left: 15px;
             font-size: 18px;
+            text-align: left;
             font-family: Montserrat;
             line-height: 1.5em;
             font-weight: bold;
@@ -75,7 +76,7 @@
             height: 200;
             border: 1.5px solid;
             border-radius: 13px;
-            box-shadow: 4px 8px 8px 0px #00000042;
+            box-shadow: 4px 8px 0px #00000042;
             cursor: pointer;
             margin: 25px;
             transition: 300ms;
@@ -84,7 +85,6 @@
         .perpus img:hover{
             filter: grayscale(1);
             transform: scale(1.03);
-
         }
 
         footer{
@@ -96,13 +96,13 @@
             padding: 8px;
             font-family: Poppins;
             font-weight: bold;
-            box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 0px 8px 8px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
+    <div class="container">
             <nav class="bar">
                 <div class="logo">
                     <div class="firstname">Perpustakaan</div>
@@ -121,15 +121,15 @@
     <main>
         <p class="p1">Sistem Informasi Perpustakaan Jakarta</p>
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
-        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta. Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik memungkinkan seseorang untuk menganalis, memahami, dan menggunakan informasi secara efektif.</p>
+        <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta.<br>Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik<br>  memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif. <br></p>
         <div class="perpus">
-            <img src="img/perpus2.jpg" alt="Perpustakaan">
-            <img src="img/perpus1.jpg" alt="Perpustakaan">
+            <img src="img/perpus2.jpg" alt="perpustakaan">
+            <img src="img/perpus1.jpg" alt="perpustakaan">
             <img src="img/perpus3.jpg" alt="perpustakaan">
         </div>
     </main>
     <footer>
-        Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
+        Create With ❤️ By Kelompok 4 <br>
         Copyright &copy; 2024
     </footer>
 </body>
