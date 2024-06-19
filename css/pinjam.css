@@ -24,6 +24,14 @@ body{
     border-radius: 20px;
 }
 
+label{
+    padding-left: 10px;
+}
+
+input{
+    border: none;
+}
+
 button{
     padding: 8px;
     border-radius: 8px;

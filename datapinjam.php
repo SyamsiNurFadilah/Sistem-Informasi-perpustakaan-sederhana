@@ -124,35 +124,35 @@
                     </tr>
                     <br>
                     <tr>
-                        <td>Nama Lengkap : </td>
+                        <td><label for="">Nama Lengkap : </label></td>
                         <td><?php echo $_SESSION["nama"];?></td>
                     </tr>
                     <tr>
-                        <td>No Telpon : </td>
+                        <td><label for="">No Telpon : </label></td>
                         <td><?php echo $_SESSION["telpon"];?></td>
                     </tr>
                     <tr>
-                        <td>Alamat : </td>
+                        <td><label for="">Alamat : </label></td>
                         <td><?php echo $_SESSION["alamat"];?></td>
                     </tr>
                     <tr>
-                        <td>Kode Buku : </td>
+                        <td><label for="">Kode Buku : </label></td>
                         <td><?php echo $_SESSION["kode"];?></td>
                     </tr>
                     <tr>
-                        <td>Judul Buku : </td>
+                        <td><label for="">Judul Buku : </label></td>
                         <td><?php echo $judul;?></td>
                     </tr>
                     <tr>
-                        <td>Pengarang : </td>
+                        <td><label for="">Pengarang : </label></td>
                         <td><?php echo $pengarang;?></td>
                     </tr>
                     <tr>
-                        <td>Tanggal Peminjaman : </td>
+                        <td><label for="">Tanggal Peminjaman : </label></td>
                         <td><?php echo $_SESSION["tglpinjam"];?></td>
                     </tr>
                     <tr>
-                        <td>Tanggal Pengembalian : </td>
+                        <td><label for="">Tanggal Pengembalian : </label></td>
                         <td><?php echo $_SESSION["tglkembali"];?></td>
                     </tr>
                 </table>

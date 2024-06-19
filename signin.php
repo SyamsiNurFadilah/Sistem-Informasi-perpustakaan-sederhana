@@ -23,11 +23,11 @@
                         <td><p style="font-family: Montserrat;"><b>Form Sign In</b></p></td>
                     </tr>
                     <tr>
-                        <td>Username : </td>
+                        <td><label for="username">Username :</label></td>
                         <td><input type="text" name="username" id="username" required></td>
                     </tr>
                     <tr>
-                        <td>Password : </td>
+                        <td><label for="password">Password : </label></td>
                         <td><input type="password" name="password" id="Password" required></td>
                     </tr>
                     <tr>

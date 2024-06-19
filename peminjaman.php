@@ -56,27 +56,27 @@
                         </tr>
                         <br>
                         <tr>
-                            <td>Nama Lengkap :</td>
+                            <td><label for="nama">Nama Lengkap :</label></td>
                             <td><input type="text" name="nama" id="nama" required></td>
                         </tr>
                         <tr>
-                            <td>No Telpon :</td>
+                            <td><label for="telpon">No Telpon :</label></td>
                             <td><input type="number" name="telpon" id="telpon" required></td>
                         </tr>
                         <tr>
-                            <td>Alamat :</td>
+                            <td><label for="alamat">Alamat :</label></td>
                             <td><textarea name="alamat" id="alamat" cols="35" rows="3" required></textarea></td>
                         </tr>
                         <tr>
-                            <td>Kode Buku :</td>
+                            <td><label for="kode">Kode Buku :</label></td>
                             <td><input type="number" name="kode" id="kode" required></td>
                         </tr>
                         <tr>
-                            <td>Tanggal Peminjaman :</td>
+                            <td><label for="tglpinjam">Tanggal Peminjaman :</label></td>
                             <td><input type="date" name="tglpinjam" id="tglpinjam" required></td>
                         </tr>
                         <tr>
-                            <td>Tanggal Pengembalian :</td>
+                            <td><label for="tglkembali">Tanggal Pengembalian :</label></td>
                             <td><input type="date" name="tglkembali" id="tglkembali" required></td>
                         </tr>
                         <tr>
