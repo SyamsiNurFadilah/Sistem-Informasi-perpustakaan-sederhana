@@ -96,7 +96,7 @@
             padding: 8px;
             font-family: Poppins;
             font-weight: bold;
-            box-shadow: 7px 0px 8px 8px rgba(0, 0, 0, 0.5);
+            box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
@@ -128,8 +128,8 @@
             <img src="img/perpus3.jpg" alt="perpustakaan">
         </div>
     </main>
-    <footer>
-        Create With ❤️ By Kelompok 4 <br>
+    <footer >
+        Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
 </body>

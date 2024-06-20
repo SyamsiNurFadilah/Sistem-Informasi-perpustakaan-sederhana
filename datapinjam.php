@@ -1,6 +1,6 @@
-<?php
-    session_start();
-?>
+    <?php
+        session_start();
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -32,6 +32,10 @@
             transition: 300ms;
             cursor: pointer;
         }
+
+        label{
+            padding-left: 10px;
+        }
         
         footer{
             position: fixed;
@@ -50,11 +54,11 @@
 
     <?php
         $kode = $_SESSION["kode"];
-
+        
         if($kode == "101"){
             $judul =  "Perahu Kertas";
             $pengarang = "Dee Lestari";
-        
+            
         }elseif($kode == "102"){
             $judul = "Ayah";
             $pengarang = "Andrea Hirata";
@@ -90,13 +94,14 @@
         }elseif($kode == "110"){
             $judul = "Fisika Statistik";
             $pengarang = "Dr.Juniastel Rajagukguk,M.Si";
-        
+            
         }else{
             $judul = "Tidak Ditemukan !!";
             $pengarang = "Tidak Ditemukan !!";
         }
             
     ?>
+
 
     <header>
         <div class="container">
@@ -115,60 +120,63 @@
             </nav>
         </div>
     </header>
-    <div class="container">
-        <div class="wrapper">
-            <form action="" method="post">
-                <table>
-                    <tr>
-                        <td><h2>Data Peminjaman :</h2></td>
-                    </tr>
-                    <br>
-                    <tr>
-                        <td><label for="">Nama Lengkap : </label></td>
-                        <td><?php echo $_SESSION["nama"];?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">No Telpon : </label></td>
-                        <td><?php echo $_SESSION["telpon"];?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Alamat : </label></td>
-                        <td><?php echo $_SESSION["alamat"];?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Kode Buku : </label></td>
-                        <td><?php echo $_SESSION["kode"];?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Judul Buku : </label></td>
-                        <td><?php echo $judul;?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Pengarang : </label></td>
-                        <td><?php echo $pengarang;?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Tanggal Peminjaman : </label></td>
-                        <td><?php echo $_SESSION["tglpinjam"];?></td>
-                    </tr>
-                    <tr>
-                        <td><label for="">Tanggal Pengembalian : </label></td>
-                        <td><?php echo $_SESSION["tglkembali"];?></td>
-                    </tr>
-                </table>
-            </form>
+
+    <?php
+        if(isset($_POST["logout"])){
+            session_destroy();
+            header("Location: index.php");
+        }
+    ?>
+
+    <main>
+        <div class="container">
+            <div class="wrapper">
+                <form action="" method="post">
+                    <table>
+                        <tr>
+                            <td><h2>Data Peminjaman :</h2></td>
+                        </tr>
+                        <br>
+                        <tr>
+                            <td><label for="">Nama Lengkap : </label></td>
+                            <td><?php echo $_SESSION["nama"];?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">No Telpon : </label></td>
+                            <td><?php echo $_SESSION["telpon"];?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Alamat : </label></td>
+                            <td><?php echo $_SESSION["alamat"];?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Kode Buku : </label></td>
+                            <td><?php echo $_SESSION["kode"];?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Judul Buku : </label></td>
+                            <td><?php echo $judul;?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Pengarang : </label></td>
+                            <td><?php echo $pengarang;?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Tanggal Peminjaman : </label></td>
+                            <td><?php echo $_SESSION["tglpinjam"];?></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Tanggal Pengembalian : </label></td>
+                            <td><?php echo $_SESSION["tglkembali"];?></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
-    </div>
-    <footer>
-        Create With ❤️ By Kelompok 4 <br>
+    </main>
+    <footer >
+        Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
 </body>
 </html>
-
-<?php
-    if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location: index.php");
-    }
-?>
