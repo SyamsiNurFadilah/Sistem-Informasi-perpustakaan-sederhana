@@ -121,8 +121,16 @@
 
     <?php
         if(isset($_POST["logout"])){
-            session_destroy();
-            header("Location: index.php");
+            if($_SESSION['nama'] == ''){
+               header("location: index.php");
+            }else{
+                ?>
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+                <script type="text/javascript">
+                    Swal.fire("Kembalikan Dulu Buku Yang Dipinjam")
+                </script>
+                <?php
+            }
         }
     ?>
 
