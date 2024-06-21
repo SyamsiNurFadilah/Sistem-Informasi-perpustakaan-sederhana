@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script ></script>
     <style>
         button{
             padding: 8px 0;
@@ -129,6 +130,26 @@
     ?>
 
     <main>
+
+    <?php
+        error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+        if($_SESSION['nama'] == ''){
+            ?>
+            <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            <script type="text/javascript">
+                Swal.fire({
+                    title: "Peringatan !",
+                    text: "Anda Tidak Memiliki Data Pinjam !",
+                    icon: "error"
+                }).then((result) => {if (result.value){
+                    window.location = 'buku.php';
+                }
+                })
+            </script>
+            <?php
+        }
+    ?>
+
         <div class="container">
             <div class="wrapper">
                 <form action="" method="post">

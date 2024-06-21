@@ -111,14 +111,27 @@
                 <ul class="navigation">
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
-                    <form action="index.php" method="post">
+                    <form action="home.php" method="post">
                         <li><button type="submit" name="logout">Logout</button></li>
                     </form>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <?php
+        if(isset($_POST["logout"])){
+            session_destroy();
+            header("Location: index.php");
+        }
+    ?>
+
     <main>
+
+        <?php
+        error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
+        ?>
+
         <p class="p1">Sistem Informasi Perpustakaan Jakarta</p>
         <p class="p2">Selamat Datang <?php echo $_SESSION["username"];?></p>
         <p class="p3">Website ini dibuat untuk memudahkan masyarakat dalam meminjam buku secara online di Perpustakaan Jakarta.<br>Dengan adanya website ini semoga bisa meningkatkan minat literasi masyarakat, karena kemampuan literasi yang baik<br>  memungkinkan seseorang untuk menganalis, memahami dan menggunakan informasi secara efektif. <br></p>
