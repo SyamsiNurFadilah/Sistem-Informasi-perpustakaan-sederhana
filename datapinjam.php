@@ -124,7 +124,12 @@
 
     <?php
         if(isset($_POST["logout"])){
-            session_destroy();
+            unset($_SESSION["nama"]);
+            unset($_SESSION["telpon"]);
+            unset($_SESSION["alamat"]);
+            unset($_SESSION["kode"]);
+            unset($_SESSION["tglpinjam"]);
+            unset($_SESSION["tglkembali"]);
             header("Location: home.php");
         }
     ?>
