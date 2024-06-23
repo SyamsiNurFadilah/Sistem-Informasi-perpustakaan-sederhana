@@ -45,6 +45,18 @@
             box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
         }
 
+    @media (max-width: 768px) {
+        img{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+        .paragraf p {
+            font-size: 40px;
+        }
+    }
+
     </style>
 </head>
 <body>

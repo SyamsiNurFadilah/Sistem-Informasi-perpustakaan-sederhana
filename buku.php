@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Buku</title>
     <link rel="stylesheet" href="css/navbar.css">
+    <script src="https://unpkg.com/feather-icons"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -77,6 +78,24 @@
             font-family: Poppins;
             font-weight: bold;
             box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
+        }
+        
+
+        @media screen and (max-width: 450px){
+            html{
+                font-size: 55%;
+            }
+	        table.responsive {
+		        width: 100%;
+	        }
+	        th {
+		        display: none;
+	        }
+	        td {
+		        display: block;
+		        text-align: center;
+	        }
+            
         }
     </style>
 
@@ -220,5 +239,9 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

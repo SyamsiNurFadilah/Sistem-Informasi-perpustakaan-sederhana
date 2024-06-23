@@ -49,6 +49,12 @@
             font-weight: bold;
             box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
             }
+
+            @media screen and (max-width: 450px){
+            html{
+                font-size: 55%;
+            }
+        }
     </style>
 </head>
 <body>

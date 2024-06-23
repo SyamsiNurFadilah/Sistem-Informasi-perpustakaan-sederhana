@@ -55,3 +55,9 @@ button:hover{
     background-color: #414afd;
     transition: all .3s ease-in-out;
 }
+
+@media screen and (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
+}
