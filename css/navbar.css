@@ -38,10 +38,14 @@
     align-items: center;
 }
 
+.navigation ul{
+    padding: 0;
+    margin: 0;
+}
+
 .navigation li{
     list-style-type: none;
-    padding: 15px;
-    margin: 0.1rem;
+    margin-right: 20px;
 }
 
 .navigation a{
@@ -56,4 +60,42 @@
     color: #A91D3A;
     border-bottom: 1px solid;
     transition: 300ms;
+}
+
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+.menu span{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin-bottom: 3px;
+}
+
+@media (max-width: 768px) {
+
+    .navigation {
+        display: block;
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 15rem;
+        background-color: black;
+        border-radius: 20px 0 0 20px;
+        padding: 20px;
+        transition: all 0.5s ease;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
+
+    .menu {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
 }

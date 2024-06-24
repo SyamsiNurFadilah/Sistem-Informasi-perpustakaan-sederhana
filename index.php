@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
         body{
             background-color: #e6ceaf;
@@ -51,7 +52,7 @@
         }
     }
 
-    @media screen and (max-width: 450px) {
+    @media screen and (max-width: 425px) {
         .paragraf p {
             font-size: 40px;
         }
@@ -71,6 +72,9 @@
                     <li><a href="signup.php">Sign Up</a></li>
                     <li><a href="signin.php">Sign In</a></li>
                 </ul>
+                <div class="menu">
+                    <span><i data-feather="menu"></i></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -84,5 +88,9 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>

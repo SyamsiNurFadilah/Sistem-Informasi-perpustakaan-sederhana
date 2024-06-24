@@ -54,6 +54,10 @@
             html{
                 font-size: 55%;
             }
+            .wrapper{
+                width: 300px;
+                height: 200px;
+    }
         }
     </style>
 </head>

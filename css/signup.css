@@ -55,3 +55,32 @@ button:hover{
     text-decoration: none;
     color: black;
 }
+
+@media screen and (max-width: 768px){
+    .container{
+        font-size: 70%;
+    }
+    .wrapper{
+        width: 400px;
+        height: 400px;
+    }
+    textarea{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 425px){
+    .container{
+        font-size: 55%;
+    }
+    .wrapper{
+        width: 300px;
+        height: 325px;
+    }
+    textarea{
+        width: 90%;
+    }
+    button{
+        font-size: 10px;
+    }
+}

@@ -56,8 +56,21 @@ button:hover{
     transition: all .3s ease-in-out;
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 425px){
     html{
         font-size: 55%;
+    }
+    .container{
+        font-size: 90%;
+    }
+    .wrapper{
+        width: 300px;
+        height: 300px;
+    }
+    textarea{
+        width: 90%;
+    }
+    button{
+        font-size: 10px;
     }
 }

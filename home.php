@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
          body{
             background-color: #e6ceaf;
@@ -125,6 +126,9 @@
                         <li><button type="submit" name="logout">Logout</button></li>
                     </form>
                 </ul>
+                <div class="menu">
+                    <span><i data-feather="menu"></i></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -163,5 +167,6 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
