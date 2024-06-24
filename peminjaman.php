@@ -17,6 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
         footer{
             position: fixed;
@@ -43,6 +44,9 @@
                     <li><a href="home.php">Home</a></li>
                     <li><a href="buku.php">Daftar Buku</a></li>
                 </ul>
+                <div class="menu">
+                    <span><i data-feather="menu"></i></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -83,6 +87,18 @@
                             <td>
                                 <button type="submit" name="submit" id="submit">Pinjam</button> 
                                 <button class="cnl1" type="reset" name="cancel" id="cancel">Batal</button>
+                            <?php
+
+                                if(isset($_POST["submit"])){
+                                    $_SESSION["nama"] = $_POST["nama"];
+                                    $_SESSION["telpon"] = $_POST["telpon"];
+                                    $_SESSION["alamat"] = $_POST["alamat"];
+                                    $_SESSION["kode"] = $_POST["kode"];
+                                    $_SESSION["tglpinjam"] = $_POST["tglpinjam"];
+                                    $_SESSION["tglkembali"] = $_POST["tglkembali"];
+                                    header("Location: datapinjam.php");
+                                }
+                            ?>
                             </td>           
                         </tr>
                     </table>
@@ -94,18 +110,9 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
-<?php
-
-    if(isset($_POST["submit"])){
-        $_SESSION["nama"] = $_POST["nama"];
-        $_SESSION["telpon"] = $_POST["telpon"];
-        $_SESSION["alamat"] = $_POST["alamat"];
-        $_SESSION["kode"] = $_POST["kode"];
-        $_SESSION["tglpinjam"] = $_POST["tglpinjam"];
-        $_SESSION["tglkembali"] = $_POST["tglkembali"];
-        header("Location: datapinjam.php");
-    }
-?>

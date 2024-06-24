@@ -100,7 +100,7 @@
             box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
         }
 
-        @media screen and (max-width: 450px){
+        @media screen and (max-width: 425px){
             html{
                 font-size: 55%;
             }
@@ -167,6 +167,9 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script>
+      feather.replace();
+    </script>
     <script src="js/script.js"></script>
 </body>
 </html>

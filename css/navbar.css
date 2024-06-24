@@ -81,11 +81,16 @@
         position: absolute;
         top: 100%;
         right: -100%;
-        width: 15rem;
-        background-color: black;
+        width: 25rem;
+        background-color: #909e5d;
+        border: 1px solid;
         border-radius: 20px 0 0 20px;
         padding: 20px;
         transition: all 0.5s ease;
+    }
+
+    .navigation li{
+        margin-top: 15px;
     }
 
     .navigation.active {
@@ -98,4 +103,5 @@
         top: 20px;
         right: 20px;
     }
+
 }

@@ -16,10 +16,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script ></script>
+    <script src="https://unpkg.com/feather-icons"></script>
     <style>
         button{
-            padding: 8px 0;
+            padding: 3px 0;
             font-weight: 700;
             background-color: #909e5d;
             border: none;
@@ -50,14 +50,14 @@
             box-shadow: 7px 0px 15px 7px rgba(0, 0, 0, 0.5);
             }
 
-            @media screen and (max-width: 450px){
+            @media screen and (max-width: 425px){
             html{
                 font-size: 55%;
             }
             .wrapper{
                 width: 300px;
                 height: 200px;
-    }
+            }
         }
     </style>
 </head>
@@ -128,6 +128,9 @@
                         <li><button type="submit" name="logout">Kembalikan</button></li>
                     </form>
                 </ul>
+                <div class="menu">
+                    <span><i data-feather="menu"></i></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -214,5 +217,9 @@
         Dibuat Dengan ❤️ Untuk Warga Jakarta <br>
         Copyright &copy; 2024
     </footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
